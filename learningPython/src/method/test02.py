@@ -6,7 +6,7 @@ def print_models(unprint_designs, completed_models):
 
 
 def show_models(completed_models):
-	print("\n the following models have been printed")
+	print("the following models have been printed")
 	for completed_model in completed_models:
 		print(completed_model)
 
