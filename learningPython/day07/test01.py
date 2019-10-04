@@ -9,5 +9,5 @@ def main():
     print(str1[2:])
     print(str1[::2])
     print(str1[-3:-1])
-if __name__ == '__main__':
+if  __name__ == '__main__':
     main()
