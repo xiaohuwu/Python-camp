@@ -792,3 +792,13 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2019-10-07 01:56:00,410 [Thread-4:123145383792640] [django.server:48] [views:detail] [INFO]- Test!!
 2019-10-07 01:56:00,412 [Thread-4:123145383792640] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
 2019-10-07 01:56:00,414 [Thread-4:123145383792640] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 02:14:46,950 [Dummy-1:123145548365824] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 02:14:46,952 [Dummy-1:123145548365824] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 02:14:56,523 [Dummy-1:123145497468928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 02:14:56,526 [Dummy-1:123145497468928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
