@@ -679,3 +679,27 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2019-10-07 01:49:22,288 [Thread-6:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
 2019-10-07 01:49:22,290 [Thread-6:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
 2019-10-07 01:49:22,292 [Thread-6:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:51:48,213 [Thread-7:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:51:48,213 [Thread-7:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:51:48,248 [Thread-7:123145350189056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 80629
+2019-10-07 01:51:49,739 [Thread-8:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:51:49,740 [Thread-8:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:51:49,772 [Thread-8:123145350189056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 80629
+2019-10-07 01:51:50,443 [Thread-9:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:51:50,444 [Thread-9:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:51:50,475 [Thread-9:123145350189056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 80629
+2019-10-07 01:52:07,905 [Thread-10:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:52:07,905 [Thread-10:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:52:07,937 [Thread-10:123145350189056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 80629
+2019-10-07 01:52:08,648 [Thread-11:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:52:08,649 [Thread-11:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:52:08,680 [Thread-11:123145350189056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 80629
+2019-10-07 01:54:01,178 [Dummy-1:123145477230592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:54:01,180 [Dummy-1:123145477230592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:54:07,520 [Thread-2:123145482485760] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:54:07,521 [Thread-2:123145482485760] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:54:07,525 [Thread-2:123145482485760] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:54:07,562 [Thread-2:123145482485760] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127

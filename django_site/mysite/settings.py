@@ -146,7 +146,7 @@ LOGGING = {
         'default': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '/Users/xiaohuge/PycharmProjects/Python-camp/mysite/log/django.log',  # 日志输出文件
+            'filename': '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/log/django.log',  # 日志输出文件
             'maxBytes': 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份份数
             'formatter': 'standard',  # 使用哪种formatters日志格式
