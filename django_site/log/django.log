@@ -1,0 +1,681 @@
+2019-10-06 13:48:52,103 [Dummy-1:123145573031936] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:48:52,105 [Dummy-1:123145573031936] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:48:52,784 [Dummy-1:123145493983232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:48:52,786 [Dummy-1:123145493983232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:48:52,893 [Dummy-1:123145488416768] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:48:52,895 [Dummy-1:123145488416768] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:49:27,748 [Dummy-1:123145542885376] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:49:27,750 [Dummy-1:123145542885376] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:50:03,631 [Dummy-1:123145326354432] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:50:03,633 [Dummy-1:123145326354432] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:51:22,695 [Dummy-1:123145552564224] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 13:51:22,697 [Dummy-1:123145552564224] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 13:51:35,611 [Thread-2:123145557819392] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 13:51:35,615 [Thread-2:123145557819392] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 13:51:35,651 [Thread-2:123145557819392] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 928
+2019-10-06 14:01:29,126 [Dummy-1:123145365581824] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 14:01:29,128 [Dummy-1:123145365581824] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 14:02:27,548 [Dummy-1:123145556484096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-06 14:02:27,550 [Dummy-1:123145556484096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-06 14:02:32,534 [Thread-2:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:02:32,538 [Thread-2:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:02:32,575 [Thread-2:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 928
+2019-10-06 14:02:33,333 [Thread-3:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:02:33,335 [Thread-3:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:02:33,337 [Thread-3:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 928
+2019-10-06 14:02:33,916 [Thread-4:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:02:33,918 [Thread-4:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:02:33,920 [Thread-4:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 928
+2019-10-06 14:02:48,578 [Thread-5:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-06 14:02:48,579 [Thread-5:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 6; args=(6,)
+2019-10-06 14:02:48,581 [Thread-5:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/6 HTTP/1.1" 302 0
+2019-10-06 14:02:48,585 [Thread-6:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:02:48,587 [Thread-6:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:02:48,588 [Thread-6:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 729
+2019-10-06 14:03:43,075 [Thread-7:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:03:43,077 [Thread-7:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:03:43,078 [Thread-7:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/?id=12 HTTP/1.1" 200 729
+2019-10-06 14:03:55,783 [Thread-8:123145561739264] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-06 14:03:55,785 [Thread-8:123145561739264] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-06 14:03:55,786 [Thread-8:123145561739264] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/?id=12 HTTP/1.1" 200 729
+2019-10-07 00:43:23,870 [Dummy-1:123145428574208] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:43:23,873 [Dummy-1:123145428574208] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:44:12,515 [Dummy-1:123145517137920] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:44:12,517 [Dummy-1:123145517137920] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:44:31,254 [Dummy-1:123145491308544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:44:31,256 [Dummy-1:123145491308544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:45:02,254 [Dummy-1:123145437040640] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:45:02,256 [Dummy-1:123145437040640] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:46:03,827 [Dummy-1:123145374810112] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:46:03,829 [Dummy-1:123145374810112] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:46:20,032 [Dummy-1:123145328848896] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:46:20,035 [Dummy-1:123145328848896] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:46:43,794 [Thread-2:123145334104064] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 527, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/mysite/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/mysite/lib/urls.py'> (lib:lib) 'lib/'>
+2019-10-07 00:46:43,798 [Thread-2:123145334104064] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 527, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/mysite/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-10-07 00:46:43,800 [Thread-2:123145334104064] [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2025
+2019-10-07 00:46:54,618 [Thread-3:123145334104064] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:46:54,622 [Thread-3:123145334104064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:46:54,662 [Thread-3:123145334104064] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:49:02,580 [Dummy-1:123145507590144] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:49:02,583 [Dummy-1:123145507590144] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:52:05,606 [Dummy-1:123145511636992] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:52:05,608 [Dummy-1:123145511636992] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:52:40,658 [Dummy-1:123145372823552] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:52:40,660 [Dummy-1:123145372823552] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:54:08,749 [Dummy-1:123145422053376] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:54:08,751 [Dummy-1:123145422053376] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:54:18,749 [Thread-2:123145427308544] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:54:18,753 [Thread-2:123145427308544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:54:18,790 [Thread-2:123145427308544] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:54:42,788 [Dummy-1:123145451999232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:54:42,789 [Dummy-1:123145451999232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:54:48,398 [Thread-2:123145457254400] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:54:48,402 [Thread-2:123145457254400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:54:48,438 [Thread-2:123145457254400] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:55:31,109 [Dummy-1:123145433817088] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:55:31,111 [Dummy-1:123145433817088] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:55:34,438 [Thread-2:123145439072256] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:55:34,442 [Thread-2:123145439072256] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:55:34,478 [Thread-2:123145439072256] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:56:15,408 [Dummy-1:123145332060160] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:56:15,409 [Dummy-1:123145332060160] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:56:21,677 [Thread-2:123145337315328] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:56:21,681 [Thread-2:123145337315328] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:56:21,718 [Thread-2:123145337315328] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:56:33,293 [Thread-3:123145337315328] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:56:33,295 [Thread-3:123145337315328] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:56:33,296 [Thread-3:123145337315328] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:57:42,510 [Dummy-1:123145393164288] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:57:42,511 [Dummy-1:123145393164288] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:57:47,723 [Thread-2:123145398419456] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 00:57:47,727 [Thread-2:123145398419456] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 00:57:47,762 [Thread-2:123145398419456] [django.server:20] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 00:57:47,762 [Thread-2:123145398419456] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content: b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n</head>\n<body>\n<h1>Book List</h1>\n<table>\n    <tr>\n        <td>\xe4\xb9\xa6\xe5\x90\x8d</td>\n        <td>\xe4\xbd\x9c\xe8\x80\x85</td>\n        <td>\xe5\x87\xba\xe7\x89\x88\xe7\xa4\xbe</td>\n        <td>\xe5\x87\xba\xe7\x89\x88\xe6\x97\xb6\xe9\x97\xb4</td>\n    </tr>\n\n    <tr>\n        <td>\xe6\xb5\x8b\xe8\xaf\x95</td>\n        <td>\xe5\xb0\x8f\xe8\x99\x8e\xe5\x93\xa5</td>\n        <td>\xe4\xb8\xad\xe5\xbf\x83\xe5\x87\xba\xe7\x89\x88\xe7\xa4\xbe</td>\n        <td>Oct. 6, 2019, 2:06 p.m.</td>\n        <td><a href="/lib/delBook/9">\xe5\x88\xa0\xe9\x99\xa4</a></td>\n    </tr>\n\n</table>\n\n<form action="/lib/addBook/" method="post" name="addBook">\n    <input type=\'hidden\' name=\'csrfmiddlewaretoken\' value=\'4eZbjqsire6l9zpw4nMo7LaHVtXjcPfZ5Mcxr8E69Snj110X2cEKw2Ic3kCpnrtb\' />\n    <p><span>\xe4\xb9\xa6\xe5\x90\x8d\xef\xbc\x9a</span><input type="text"  name="name"></p>\n    <p><span>\xe4\xbd\x9c\xe8\x80\x85\xef\xbc\x9a</span><input type="text"  name="author"></p>\n    <p><span>\xe5\x87\xba\xe7\x89\x88\xe7\xa4\xbe\xef\xbc\x9a</span><input type="text"  name="pub_house"></p>\n    <input type="submit" value="\xe6\xb7\xbb\xe5\x8a\xa0">\n</form>\n\n</body>\n</html>'
+2019-10-07 00:57:47,763 [Thread-2:123145398419456] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 927
+2019-10-07 00:58:54,369 [Dummy-1:123145533640704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:58:54,370 [Dummy-1:123145533640704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:59:05,979 [Dummy-1:123145494564864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 00:59:05,981 [Dummy-1:123145494564864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 00:59:19,456 [Thread-2:123145499820032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 00:59:19,457 [Thread-2:123145499820032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 16:59:19.455760'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 16:59:19.455760']
+2019-10-07 00:59:19,460 [Thread-2:123145499820032] [django.server:20] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 00:59:19,520 [Thread-2:123145499820032] [django.server:124] [basehttp:log_message] [ERROR]- "POST /lib/addBook/ HTTP/1.1" 500 61509
+2019-10-07 01:00:35,196 [Dummy-1:123145421250560] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:00:35,198 [Dummy-1:123145421250560] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:00:41,093 [Thread-2:123145426505728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:00:41,095 [Thread-2:123145426505728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:00:41.093469'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:00:41.093469']
+2019-10-07 01:00:41,098 [Thread-2:123145426505728] [django.server:20] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:00:41,157 [Thread-2:123145426505728] [django.server:124] [basehttp:log_message] [ERROR]- "POST /lib/addBook/ HTTP/1.1" 500 61643
+2019-10-07 01:01:26,667 [Dummy-1:123145381433344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:01:26,669 [Dummy-1:123145381433344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:03:36,050 [Thread-2:123145386688512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:03:36,052 [Thread-2:123145386688512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:03:36.050461'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:03:36.050461']
+2019-10-07 01:03:36,055 [Thread-2:123145386688512] [django.server:20] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:03:36,056 [Thread-2:123145386688512] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'csrfmiddlewaretoken=4eZbjqsire6l9zpw4nMo7LaHVtXjcPfZ5Mcxr8E69Snj110X2cEKw2Ic3kCpnrtb&name=%E6%B5%8B%E8%AF%95&author=%E5%B0%8F%E8%99%8E%E5%93%A5&pub_house=%E4%B8%AD%E5%BF%83%E5%87%BA%E7%89%88%E7%A4%BE' response code: 302. response content-length: 302
+2019-10-07 01:03:36,056 [Thread-2:123145386688512] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:03:36,060 [Thread-3:123145386688512] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:03:36,064 [Thread-3:123145386688512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:03:36,098 [Thread-3:123145386688512] [django.server:20] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:03:36,098 [Thread-3:123145386688512] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:03:36,099 [Thread-3:123145386688512] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1522
+2019-10-07 01:06:18,238 [Dummy-1:123145508044800] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:06:18,240 [Dummy-1:123145508044800] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:07:50,407 [Dummy-1:123145394999296] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:07:50,408 [Dummy-1:123145394999296] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:08:33,625 [Dummy-1:123145559916544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:08:33,627 [Dummy-1:123145559916544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:08:47,319 [Thread-2:123145565171712] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:08:47,323 [Thread-2:123145565171712] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:08:47,359 [Thread-2:123145565171712] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:08:47,385 [Thread-2:123145565171712] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60740
+2019-10-07 01:10:26,273 [Dummy-1:123145388322816] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:10:26,275 [Dummy-1:123145388322816] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:10:43,011 [Dummy-1:123145573695488] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:10:43,013 [Dummy-1:123145573695488] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:11:00,516 [Thread-2:123145578950656] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:11:00,520 [Thread-2:123145578950656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:11:00,558 [Thread-2:123145578950656] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:11:00,558 [Thread-2:123145578950656] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. response content-length: 200
+2019-10-07 01:11:00,559 [Thread-2:123145578950656] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1522
+2019-10-07 01:11:30,685 [Thread-3:123145578950656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:11:30,687 [Thread-3:123145578950656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:11:30.685451'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:11:30.685451']
+2019-10-07 01:11:30,688 [Thread-3:123145578950656] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:11:30,689 [Thread-3:123145578950656] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: csrfmiddlewaretoken=x4R6DJyIcai8DHhi7t49wF8gxHylo42EyC4sLrKwUOz6v9SJ5iWvVWGLFydrzGgQ&name=%E6%B5%8B%E8%AF%95&author=%E5%B0%8F%E8%99%8E%E5%93%A5&pub_house=%E4%B8%AD%E5%BF%83%E5%87%BA%E7%89%88%E7%A4%BE response code: 302. response content-length: 302
+2019-10-07 01:11:30,689 [Thread-3:123145578950656] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:11:30,694 [Thread-4:123145578950656] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:11:30,696 [Thread-4:123145578950656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:11:30,697 [Thread-4:123145578950656] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:11:30,698 [Thread-4:123145578950656] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. response content-length: 200
+2019-10-07 01:11:30,698 [Thread-4:123145578950656] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:12:48,854 [Dummy-1:123145362853888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:12:48,856 [Dummy-1:123145362853888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:12:53,999 [Thread-2:123145368109056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:12:54,004 [Thread-2:123145368109056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:12:54,052 [Thread-2:123145368109056] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:12:54,075 [Thread-2:123145368109056] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60740
+2019-10-07 01:15:08,014 [Dummy-1:123145445412864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:15:08,016 [Dummy-1:123145445412864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:15:51,261 [Dummy-1:123145326735360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:15:51,263 [Dummy-1:123145326735360] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:15:58,834 [Thread-2:123145331990528] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:15:58,839 [Thread-2:123145331990528] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:15:58,876 [Thread-2:123145331990528] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:15:58,905 [Thread-2:123145331990528] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64566
+2019-10-07 01:16:20,460 [Thread-3:123145331990528] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:16:20,462 [Thread-3:123145331990528] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:16:20,464 [Thread-3:123145331990528] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:16:20,491 [Thread-3:123145331990528] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64566
+2019-10-07 01:16:43,686 [Dummy-1:123145466384384] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:16:43,687 [Dummy-1:123145466384384] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:16:44,552 [Thread-2:123145471639552] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:16:44,556 [Thread-2:123145471639552] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:16:44,593 [Thread-2:123145471639552] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:16:44,620 [Thread-2:123145471639552] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64568
+2019-10-07 01:16:45,664 [Thread-3:123145471639552] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:16:45,666 [Thread-3:123145471639552] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:16:45,668 [Thread-3:123145471639552] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:16:45,694 [Thread-3:123145471639552] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64568
+2019-10-07 01:17:44,259 [Dummy-1:123145497223168] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:17:44,261 [Dummy-1:123145497223168] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:17:44,756 [Thread-2:123145502478336] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:17:44,760 [Thread-2:123145502478336] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:17:44,796 [Thread-2:123145502478336] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:17:44,823 [Thread-2:123145502478336] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64574
+2019-10-07 01:18:10,219 [Dummy-1:123145345191936] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:18:10,221 [Dummy-1:123145345191936] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:18:35,105 [Dummy-1:123145313337344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:18:35,107 [Dummy-1:123145313337344] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:19:18,330 [Dummy-1:123145508212736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:19:18,332 [Dummy-1:123145508212736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:19:20,824 [Thread-2:123145513467904] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:19:20,828 [Thread-2:123145513467904] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:19:20,865 [Thread-2:123145513467904] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:19:20,891 [Thread-2:123145513467904] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64542
+2019-10-07 01:20:03,718 [Dummy-1:123145421860864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:20:03,720 [Dummy-1:123145421860864] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:20:05,473 [Thread-2:123145427116032] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:20:05,478 [Thread-2:123145427116032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:20:05,516 [Thread-2:123145427116032] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:20:05,516 [Thread-2:123145427116032] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:20:05,516 [Thread-2:123145427116032] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:20:08,067 [Thread-3:123145427116032] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:20:08,069 [Thread-3:123145427116032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:20:08,070 [Thread-3:123145427116032] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:20:08,070 [Thread-3:123145427116032] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:20:08,071 [Thread-3:123145427116032] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:20:08,663 [Thread-4:123145427116032] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:20:08,665 [Thread-4:123145427116032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:20:08,666 [Thread-4:123145427116032] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:20:08,667 [Thread-4:123145427116032] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:20:08,667 [Thread-4:123145427116032] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:20:42,917 [Dummy-1:123145572372480] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:20:42,919 [Dummy-1:123145572372480] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:20:45,451 [Thread-2:123145577627648] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:20:45,456 [Thread-2:123145577627648] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:20:45,494 [Thread-2:123145577627648] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:20:45,520 [Thread-2:123145577627648] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64533
+2019-10-07 01:21:20,095 [Dummy-1:123145487327232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:21:20,097 [Dummy-1:123145487327232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:21:20,681 [Thread-2:123145492582400] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:21:20,685 [Thread-2:123145492582400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:21:20,718 [Thread-2:123145492582400] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:21:20,740 [Thread-2:123145492582400] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60739
+2019-10-07 01:21:41,947 [Dummy-1:123145378856960] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:21:41,949 [Dummy-1:123145378856960] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:21:42,661 [Thread-2:123145384112128] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:21:42,665 [Thread-2:123145384112128] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:21:42,701 [Thread-2:123145384112128] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:21:42,728 [Thread-2:123145384112128] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64533
+2019-10-07 01:25:02,382 [Dummy-1:123145569767424] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:25:02,384 [Dummy-1:123145569767424] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:25:35,445 [Dummy-1:123145467768832] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:25:35,447 [Dummy-1:123145467768832] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:25:36,860 [Thread-2:123145473024000] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:25:36,864 [Thread-2:123145473024000] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:25:36,927 [Thread-2:123145473024000] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60786
+2019-10-07 01:26:29,898 [Dummy-1:123145465917440] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:26:29,900 [Dummy-1:123145465917440] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:26:30,451 [Thread-2:123145471172608] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:26:30,456 [Thread-2:123145471172608] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:26:30,493 [Thread-2:123145471172608] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:26:30,520 [Thread-2:123145471172608] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 64535
+2019-10-07 01:27:34,635 [Dummy-1:123145463906304] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:27:34,637 [Dummy-1:123145463906304] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:27:35,818 [Thread-2:123145469161472] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:27:35,822 [Thread-2:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:27:35,859 [Thread-2:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:27:35,859 [Thread-2:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:27:35,859 [Thread-2:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:27:44,354 [Thread-3:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:27:44,356 [Thread-3:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 9; args=(9,)
+2019-10-07 01:27:44,357 [Thread-3:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:27:44,357 [Thread-3:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 302. response content-length: 302
+2019-10-07 01:27:44,358 [Thread-3:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/9 HTTP/1.1" 302 0
+2019-10-07 01:27:44,362 [Thread-4:123145469161472] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:27:44,364 [Thread-4:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:27:44,365 [Thread-4:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:27:44,365 [Thread-4:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:27:44,366 [Thread-4:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1523
+2019-10-07 01:28:15,940 [Thread-5:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:28:15,941 [Thread-5:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 10; args=(10,)
+2019-10-07 01:28:15,942 [Thread-5:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:28:15,943 [Thread-5:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 302. response content-length: 302
+2019-10-07 01:28:15,943 [Thread-5:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/10 HTTP/1.1" 302 0
+2019-10-07 01:28:15,947 [Thread-6:123145469161472] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:28:15,949 [Thread-6:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:28:15,950 [Thread-6:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:28:15,950 [Thread-6:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:28:15,951 [Thread-6:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1323
+2019-10-07 01:28:42,432 [Thread-7:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:28:42,433 [Thread-7:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:28:42.431631'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:28:42.431631']
+2019-10-07 01:28:42,434 [Thread-7:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:28:42,434 [Thread-7:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'csrfmiddlewaretoken=CAlLCHgOb2Ga9VfNm2d7QEiE19vHfhq5D8y7KpsCTGX81nQekR5tfVQ990aNqTEh&name=%E6%B5%8B%E8%AF%95&author=%E5%B0%8F%E8%99%8E%E5%93%A5&pub_house=%E4%B8%AD%E5%BF%83%E5%87%BA%E7%89%88%E7%A4%BE' response code: 302. response content-length: 302
+2019-10-07 01:28:42,434 [Thread-7:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:28:42,437 [Thread-8:123145469161472] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:28:42,439 [Thread-8:123145469161472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:28:42,441 [Thread-8:123145469161472] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:28:42,441 [Thread-8:123145469161472] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: b'' response code: 200. response content-length: 200
+2019-10-07 01:28:42,441 [Thread-8:123145469161472] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1522
+2019-10-07 01:31:15,465 [Dummy-1:123145351651328] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:31:15,467 [Dummy-1:123145351651328] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:31:23,440 [Thread-2:123145356906496] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:31:23,444 [Thread-2:123145356906496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:31:23,481 [Thread-2:123145356906496] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:31:23,482 [Thread-2:123145356906496] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. responsecontent-length: 200
+2019-10-07 01:31:23,482 [Thread-2:123145356906496] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1522
+2019-10-07 01:31:40,350 [Thread-3:123145356906496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:31:40,352 [Thread-3:123145356906496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:31:40.350159'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:31:40.350159']
+2019-10-07 01:31:40,353 [Thread-3:123145356906496] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:31:40,353 [Thread-3:123145356906496] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: csrfmiddlewaretoken=fShsnmT8CiLajXZIyX0Vei6Fa9G2tTlMgquOv45WkW28bpA9wMShDzEai0l8EvzY&name=%E6%B5%8B%E8%AF%95&author=%E5%B0%8F%E8%99%8E%E5%93%A5&pub_house=%E4%B8%AD%E5%BF%83%E5%87%BA%E7%89%88%E7%A4%BE response code: 302. responsecontent-length: 302
+2019-10-07 01:31:40,354 [Thread-3:123145356906496] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:31:40,358 [Thread-4:123145356906496] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:31:40,360 [Thread-4:123145356906496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:31:40,361 [Thread-4:123145356906496] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:31:40,362 [Thread-4:123145356906496] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. responsecontent-length: 200
+2019-10-07 01:31:40,362 [Thread-4:123145356906496] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:32:25,264 [Dummy-1:123145537781760] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:32:25,266 [Dummy-1:123145537781760] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:32:29,460 [Thread-2:123145543036928] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:32:29,464 [Thread-2:123145543036928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:32:29,500 [Thread-2:123145543036928] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:32:29,500 [Thread-2:123145543036928] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. responsecontent-length: 200
+2019-10-07 01:32:29,501 [Thread-2:123145543036928] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:32:34,628 [Thread-3:123145543036928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:32:34,629 [Thread-3:123145543036928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:32:34.627797'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:32:34.627797']
+2019-10-07 01:32:34,630 [Thread-3:123145543036928] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:32:34,630 [Thread-3:123145543036928] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body: csrfmiddlewaretoken=cxww7waxu7w3UoGC9la8iAnUYpxXXsUed5JSfemlcLN1MQh37a2uHRVp6gc3848q&name=测试&author=小虎哥&pub_house=中心出版社 response code: 302. responsecontent-length: 302
+2019-10-07 01:32:34,631 [Thread-3:123145543036928] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:32:34,634 [Thread-4:123145543036928] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:32:34,636 [Thread-4:123145543036928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:32:34,638 [Thread-4:123145543036928] [django.server:21] [md1:process_response] [INFO]- MD2里面的 process_request
+2019-10-07 01:32:34,638 [Thread-4:123145543036928] [django.server:29] [md1:process_response] [INFO]- GET: <QueryDict: {}>. body:  response code: 200. responsecontent-length: 200
+2019-10-07 01:32:34,638 [Thread-4:123145543036928] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:34:14,880 [Dummy-1:123145428226048] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:34:14,883 [Dummy-1:123145428226048] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:35:06,306 [Dummy-1:123145525440512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:35:06,307 [Dummy-1:123145525440512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:37:04,019 [Dummy-1:123145323884544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:37:04,021 [Dummy-1:123145323884544] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:39:23,582 [Thread-2:123145329139712] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:39:23,586 [Thread-2:123145329139712] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:39:23,622 [Thread-2:123145329139712] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: <bound method HttpRequest.get_full_path of <WSGIRequest: GET '/lib/detail/'>>. body:  response code: 200. responsecontent-length: 200
+2019-10-07 01:39:23,623 [Thread-2:123145329139712] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:40:35,590 [Dummy-1:123145388163072] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:40:35,592 [Dummy-1:123145388163072] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:40:41,676 [Thread-2:123145393418240] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:40:41,680 [Thread-2:123145393418240] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:40:41,741 [Thread-2:123145393418240] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60708
+2019-10-07 01:41:04,184 [Thread-3:123145393418240] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:41:04,186 [Thread-3:123145393418240] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:41:04,213 [Thread-3:123145393418240] [django.server:124] [basehttp:log_message] [ERROR]- "GET /lib/detail/ HTTP/1.1" 500 60704
+2019-10-07 01:41:04,630 [Dummy-1:123145369583616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:41:04,632 [Dummy-1:123145369583616] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:41:14,808 [Thread-2:123145374838784] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:41:14,812 [Thread-2:123145374838784] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:41:14,849 [Thread-2:123145374838784] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: <bound method HttpRequest.get_full_path of <WSGIRequest: GET '/lib/detail/'>>. body:  response code: 200. responsecontent-length: 1724
+2019-10-07 01:41:14,849 [Thread-2:123145374838784] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:41:31,199 [Thread-3:123145374838784] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:41:31,201 [Thread-3:123145374838784] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:41:31,204 [Thread-3:123145374838784] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: <bound method HttpRequest.get_full_path of <WSGIRequest: GET '/lib/detail/'>>. body:  response code: 200. responsecontent-length: 1724
+2019-10-07 01:41:31,204 [Thread-3:123145374838784] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:41:31,611 [Dummy-1:123145342332928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:41:31,613 [Dummy-1:123145342332928] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:41:45,541 [Thread-2:123145347588096] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:41:45,545 [Thread-2:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:41:45,583 [Thread-2:123145347588096] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. responsecontent-length: 1724
+2019-10-07 01:41:45,584 [Thread-2:123145347588096] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:42:10,412 [Thread-3:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:42:10,413 [Thread-3:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 12; args=(12,)
+2019-10-07 01:42:10,415 [Thread-3:123145347588096] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/12. body:  response code: 302. responsecontent-length: 0
+2019-10-07 01:42:10,415 [Thread-3:123145347588096] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/12 HTTP/1.1" 302 0
+2019-10-07 01:42:10,419 [Thread-4:123145347588096] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:42:10,421 [Thread-4:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:42:10,423 [Thread-4:123145347588096] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. responsecontent-length: 1721
+2019-10-07 01:42:10,424 [Thread-4:123145347588096] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:42:36,713 [Thread-5:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:42:36,714 [Thread-5:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:42:36.712863'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:42:36.712863']
+2019-10-07 01:42:36,715 [Thread-5:123145347588096] [django.server:27] [md1:process_response] [INFO]- method: POST. get_full_path: /lib/addBook/. body: csrfmiddlewaretoken=8XIftiCYn14za0VPVKcSEqDVHVjHcziL9vVBB0OM5Flx2swgTz4e3HbqPMYNnbwX&name=测试&author=小虎哥&pub_house=中心出版社 response code: 302. responsecontent-length: 0
+2019-10-07 01:42:36,716 [Thread-5:123145347588096] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:42:36,719 [Thread-6:123145347588096] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:42:36,722 [Thread-6:123145347588096] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:42:36,723 [Thread-6:123145347588096] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. responsecontent-length: 1724
+2019-10-07 01:42:36,724 [Thread-6:123145347588096] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:43:14,143 [Dummy-1:123145435557888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:43:14,145 [Dummy-1:123145435557888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:43:14,325 [Thread-2:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:43:14,329 [Thread-2:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:43:14,364 [Thread-2:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1724
+2019-10-07 01:43:14,364 [Thread-2:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1724
+2019-10-07 01:43:15,873 [Thread-3:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:43:15,874 [Thread-3:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 15; args=(15,)
+2019-10-07 01:43:15,876 [Thread-3:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/15. body:  response code: 302. response content-length: 0
+2019-10-07 01:43:15,876 [Thread-3:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/15 HTTP/1.1" 302 0
+2019-10-07 01:43:15,879 [Thread-4:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:43:15,882 [Thread-4:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:43:15,884 [Thread-4:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1721
+2019-10-07 01:43:15,884 [Thread-4:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1721
+2019-10-07 01:44:00,353 [Thread-5:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:44:00,354 [Thread-5:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) DELETE FROM "lib_book" WHERE "lib_book"."id" = 11; args=(11,)
+2019-10-07 01:44:00,355 [Thread-5:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/11. body:  response code: 302. response content-length: 0
+2019-10-07 01:44:00,356 [Thread-5:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/11 HTTP/1.1" 302 0
+2019-10-07 01:44:00,359 [Thread-6:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:44:00,361 [Thread-6:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:44:00,363 [Thread-6:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1525
+2019-10-07 01:44:00,363 [Thread-6:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1525
+2019-10-07 01:44:35,577 [Thread-7:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:44:35,578 [Thread-7:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) DELETE FROM "lib_book" WHERE "lib_book"."id" = 13; args=(13,)
+2019-10-07 01:44:35,580 [Thread-7:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/13. body:  response code: 302. response content-length: 0
+2019-10-07 01:44:35,580 [Thread-7:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/13 HTTP/1.1" 302 0
+2019-10-07 01:44:35,584 [Thread-8:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:44:35,586 [Thread-8:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:44:35,587 [Thread-8:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1326
+2019-10-07 01:44:35,588 [Thread-8:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1326
+2019-10-07 01:44:36,420 [Thread-9:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:44:36,421 [Thread-9:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 14; args=(14,)
+2019-10-07 01:44:36,422 [Thread-9:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/14. body:  response code: 302. response content-length: 0
+2019-10-07 01:44:36,423 [Thread-9:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/14 HTTP/1.1" 302 0
+2019-10-07 01:44:36,426 [Thread-10:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:44:36,428 [Thread-10:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:44:36,430 [Thread-10:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1127
+2019-10-07 01:44:36,430 [Thread-10:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:44:37,518 [Thread-11:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:44:37,519 [Thread-11:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 16; args=(16,)
+2019-10-07 01:44:37,521 [Thread-11:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/delBook/16. body:  response code: 302. response content-length: 0
+2019-10-07 01:44:37,521 [Thread-11:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/16 HTTP/1.1" 302 0
+2019-10-07 01:44:37,525 [Thread-12:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:44:37,526 [Thread-12:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:44:37,527 [Thread-12:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 928
+2019-10-07 01:44:37,528 [Thread-12:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 928
+2019-10-07 01:44:42,600 [Thread-13:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:44:42,601 [Thread-13:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:44:42.600099'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:44:42.600099']
+2019-10-07 01:44:42,602 [Thread-13:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: POST. get_full_path: /lib/addBook/. body: csrfmiddlewaretoken=X4KFx6vCdYnfKE6G72nQ5CQirtvdMvR5YCX1FOHqVCEdC6H75RfcuToNzkajX75h&name=测试&author=小虎哥&pub_house=中心出版社 response code: 302. response content-length: 0
+2019-10-07 01:44:42,603 [Thread-13:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:44:42,606 [Thread-14:123145440813056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:44:42,609 [Thread-14:123145440813056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:44:42,610 [Thread-14:123145440813056] [django.server:27] [md1:process_response] [INFO]- method: GET. get_full_path: /lib/detail/. body:  response code: 200. response content-length: 1127
+2019-10-07 01:44:42,611 [Thread-14:123145440813056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:48:23,719 [Dummy-1:123145344933888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:48:23,721 [Dummy-1:123145344933888] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:48:28,804 [Thread-2:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:48:28,804 [Thread-2:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:48:28,808 [Thread-2:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:48:28,845 [Thread-2:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:49:02,544 [Thread-3:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /lib/addBook/. body: csrfmiddlewaretoken=mROqt86mmGwjVV4FKmC2i0MVOWwip9nonp1MBQia4kNhNnF6IbuoHhkqWNboALBA&name=测试&author=小虎哥&pub_house=中心出版社
+2019-10-07 01:49:02,545 [Thread-3:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:49:02,547 [Thread-3:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "lib_book" ("name", "author", "pub_house", "pub_date") VALUES ('测试', '小虎哥', '中心出版社', '2019-10-06 17:49:02.545010'); args=['测试', '小虎哥', '中心出版社', '2019-10-06 17:49:02.545010']
+2019-10-07 01:49:02,548 [Thread-3:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "POST /lib/addBook/ HTTP/1.1" 302 0
+2019-10-07 01:49:02,552 [Thread-4:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:49:02,553 [Thread-4:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:49:02,554 [Thread-4:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:49:02,557 [Thread-4:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1326
+2019-10-07 01:49:22,281 [Thread-5:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/delBook/17. body: 
+2019-10-07 01:49:22,282 [Thread-5:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-10-07 01:49:22,283 [Thread-5:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) DELETE FROM "lib_book" WHERE "lib_book"."id" = 17; args=(17,)
+2019-10-07 01:49:22,284 [Thread-5:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/delBook/17 HTTP/1.1" 302 0
+2019-10-07 01:49:22,288 [Thread-6:123145350189056] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:49:22,288 [Thread-6:123145350189056] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:49:22,290 [Thread-6:123145350189056] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:49:22,292 [Thread-6:123145350189056] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
