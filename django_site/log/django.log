@@ -703,3 +703,92 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2019-10-07 01:54:07,521 [Thread-2:123145482485760] [django.server:48] [views:detail] [INFO]- Test!!
 2019-10-07 01:54:07,525 [Thread-2:123145482485760] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
 2019-10-07 01:54:07,562 [Thread-2:123145482485760] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:55:48,645 [Dummy-1:123145378537472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-10-07 01:55:48,646 [Dummy-1:123145378537472] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-10-07 01:55:52,770 [Thread-2:123145383792640] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /. body: 
+2019-10-07 01:55:52,773 [Thread-2:123145383792640] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 527, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2019-10-07 01:55:52,775 [Thread-2:123145383792640] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 527, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-10-07 01:55:52,778 [Thread-2:123145383792640] [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2025
+2019-10-07 01:55:58,546 [Thread-3:123145383792640] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:55:58,547 [Thread-3:123145383792640] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:55:58,551 [Thread-3:123145383792640] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:55:58,589 [Thread-3:123145383792640] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
+2019-10-07 01:56:00,410 [Thread-4:123145383792640] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/detail/. body: 
+2019-10-07 01:56:00,410 [Thread-4:123145383792640] [django.server:48] [views:detail] [INFO]- Test!!
+2019-10-07 01:56:00,412 [Thread-4:123145383792640] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "lib_book"."id", "lib_book"."name", "lib_book"."author", "lib_book"."pub_house", "lib_book"."pub_date" FROM "lib_book" ORDER BY "lib_book"."pub_date" DESC LIMIT 5; args=()
+2019-10-07 01:56:00,414 [Thread-4:123145383792640] [django.server:124] [basehttp:log_message] [INFO]- "GET /lib/detail/ HTTP/1.1" 200 1127
