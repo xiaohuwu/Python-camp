@@ -20,7 +20,7 @@ import logging
 mylog = logging.getLogger("django.server")
 
 def index(request):
-    return ""
+    return HttpResponse("good")
 
 
 

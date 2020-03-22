@@ -12,7 +12,7 @@ class LoggingMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
         self._initial_http_body = request.body # this requires because for some reasons there is no way to access request.body in the 'process_response' method.
-        mylog.info("method: {}. get_full_path: {}. body: {}".format(request.method, request.get_full_path(), unquote(str(self._initial_http_body, 'utf-8')), extra={
+        mylog.info("method: {}. get_full_path: {}, body: {}".format(request.method, request.get_full_path(), unquote(str(self._initial_http_body, 'utf-8')), extra={
             'tags': {
                 'url': request.build_absolute_uri()
             }
