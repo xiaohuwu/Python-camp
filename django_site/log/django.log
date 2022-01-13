@@ -4635,3 +4635,1953 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2020-03-23 00:32:25,307 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/templatetags/l10n.py first seen with mtime 1584894170.0410128
 2020-03-23 00:32:25,307 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django_extensions/templatetags/__init__.py first seen with mtime 1570320476.2977393
 2020-03-23 00:32:25,308 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/sessions/exceptions.py first seen with mtime 1584894169.8490648
+2020-03-23 00:34:23,443 [Thread-1:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /login/index/, body: 
+2020-03-23 00:34:23,448 [Thread-1:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'login/index/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2020-03-23 00:34:23,450 [Thread-1:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'login/index/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-03-23 00:34:23,452 [Thread-1:123145579646976] [django.server:157] [basehttp:log_message] [WARNING]- "GET /login/index/ HTTP/1.1" 404 2079
+2020-03-23 00:34:24,039 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/messages/storage/base.py first seen with mtime 1584894169.755534
+2020-03-23 00:34:24,039 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/messages/storage/fallback.py first seen with mtime 1584894169.7560112
+2020-03-23 00:34:24,040 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/messages/storage/cookie.py first seen with mtime 1584894169.755772
+2020-03-23 00:34:24,042 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/messages/storage/session.py first seen with mtime 1584894169.7562375
+2020-03-23 00:34:24,042 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/messages/utils.py first seen with mtime 1584894169.7548487
+2020-03-23 00:34:24,047 [MainThread:4364711360] [django.utils.autoreload:349] [autoreload:tick] [DEBUG]- File /usr/local/lib/python3.7/site-packages/django/contrib/sessions/serializers.py first seen with mtime 1584894169.8497672
+2020-03-23 00:42:52,291 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /rango/, body: 
+2020-03-23 00:42:52,293 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2020-03-23 00:42:52,295 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-03-23 00:42:52,297 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [WARNING]- "GET /rango/ HTTP/1.1" 404 2061
+2020-03-23 00:42:59,854 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /rango/, body: 
+2020-03-23 00:42:59,856 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2020-03-23 00:42:59,857 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-03-23 00:42:59,858 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [WARNING]- "GET /rango/ HTTP/1.1" 404 2061
+2020-03-23 00:43:11,342 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /rango/, body: 
+2020-03-23 00:43:11,345 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2020-03-23 00:43:11,347 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-03-23 00:43:11,349 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [WARNING]- "GET /rango/ HTTP/1.1" 404 2061
+2020-03-23 00:43:37,166 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /rango/category/python/, body: 
+2020-03-23 00:43:37,169 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/category/python/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>
+2020-03-23 00:43:37,170 [Thread-2:123145579646976] [django.template:871] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'lib.urls' from '/Users/xiaohuge/PycharmProjects/Python-camp/django_site/lib/urls.py'> (lib:lib) 'lib/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'rango/category/python/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-03-23 00:43:37,171 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [WARNING]- "GET /rango/category/python/ HTTP/1.1" 404 2109
+2020-03-23 00:46:30,893 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/, body: 
+2020-03-23 00:46:30,894 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [INFO]- "GET /lib/ HTTP/1.1" 200 4
+2020-03-23 00:46:32,117 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/, body: 
+2020-03-23 00:46:32,118 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [INFO]- "GET /lib/ HTTP/1.1" 200 4
+2020-03-23 00:46:32,724 [Thread-2:123145579646976] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /lib/, body: 
+2020-03-23 00:46:32,724 [Thread-2:123145579646976] [django.server:157] [basehttp:log_message] [INFO]- "GET /lib/ HTTP/1.1" 200 4
+2020-04-16 16:41:34,400 [Dummy-1:123145407803392] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2020-04-16 16:41:34,401 [Dummy-1:123145407803392] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:41:34,403 [Dummy-1:123145407803392] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SHOW FULL TABLES; args=None
+2020-04-16 16:41:34,410 [Dummy-1:123145407803392] [django.db.backends:111] [utils:execute] [DEBUG]- (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2020-04-16 16:41:42,021 [Thread-2:123145413058560] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /. body: 
+2020-04-16 16:41:42,025 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-04-16 16:41:42,027 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>
+2020-04-16 16:41:42,030 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>
+2020-04-16 16:41:42,032 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>
+2020-04-16 16:41:42,034 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>
+2020-04-16 16:41:42,036 [Thread-2:123145413058560] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>
+2020-04-16 16:41:42,039 [Thread-2:123145413058560] [django.server:154] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 3027
+2020-04-16 16:41:55,011 [Thread-3:123145418313728] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /. body: 
+2020-04-16 16:41:55,013 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2020-04-16 16:41:55,016 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>
+2020-04-16 16:41:55,018 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>
+2020-04-16 16:41:55,020 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>
+2020-04-16 16:41:55,022 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>
+2020-04-16 16:41:55,025 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'tinymce.urls' from '/usr/local/lib/python3.7/site-packages/tinymce/urls.py'> (None:None) 'tinymce/'>], [<URLResolver <module 'haystack.urls' from '/usr/local/lib/python3.7/site-packages/haystack/urls.py'> (None:None) 'search/'>], [<URLResolver <module 'user.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/user/urls.py'> (apps.user:user) 'user/'>], [<URLResolver <module 'cart.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/cart/urls.py'> (apps.cart:cart) 'cart/'>], [<URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^index/$' [name='index']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^goods/(?P<goods_id>\d+)$' [name='detail']>], [<URLResolver <module 'goods.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/goods/urls.py'> (apps.goods:goods) ''>, <URLPattern '^list/(?P<type_id>\d+)/(?P<page>\d+)$' [name='list']>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'order.urls' from '/Users/xiaohuge/PycharmProjects/dailyfresh-B2C/dailyfresh/apps/order/urls.py'> (apps.order:order) 'order/'>
+2020-04-16 16:41:55,027 [Thread-3:123145418313728] [django.server:154] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 3027
+2020-04-16 16:42:07,431 [Thread-3:123145418313728] [django.server:154] [basehttp:log_message] [INFO]- "GET /index HTTP/1.1" 301 0
+2020-04-16 16:42:07,435 [Thread-3:123145418313728] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /index/. body: 
+2020-04-16 16:42:07,441 [Thread-3:123145418313728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2020-04-16 16:42:07,442 [Thread-3:123145418313728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:42:07,454 [Thread-3:123145418313728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.012) SELECT `df_goods_type`.`id`, `df_goods_type`.`create_time`, `df_goods_type`.`update_time`, `df_goods_type`.`is_delete`, `df_goods_type`.`name`, `df_goods_type`.`logo`, `df_goods_type`.`image` FROM `df_goods_type`; args=()
+2020-04-16 16:42:07,457 [Thread-3:123145418313728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `df_index_banner`.`id`, `df_index_banner`.`create_time`, `df_index_banner`.`update_time`, `df_index_banner`.`is_delete`, `df_index_banner`.`sku_id`, `df_index_banner`.`image`, `df_index_banner`.`index` FROM `df_index_banner` ORDER BY `df_index_banner`.`index` ASC; args=()
+2020-04-16 16:42:07,462 [Thread-3:123145418313728] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `df_index_promotion`.`id`, `df_index_promotion`.`create_time`, `df_index_promotion`.`update_time`, `df_index_promotion`.`is_delete`, `df_index_promotion`.`name`, `df_index_promotion`.`url`, `df_index_promotion`.`image`, `df_index_promotion`.`index` FROM `df_index_promotion` ORDER BY `df_index_promotion`.`index` ASC; args=()
+2020-04-16 16:42:07,479 [Thread-3:123145418313728] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cart_count' in template 'df_goods/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cart_count] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x107765cb0>>, 'request': <WSGIRequest: GET '/index/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x107614c50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10779d810>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10776d190>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'types': <QuerySet []>, 'index_banner': <QuerySet []>, 'promotion_banner': <QuerySet []>}, {'block': <Block Node: search_bar. Contents: [<TextNode: '\n\t<div class="search_bar '>, <django.template.defaulttags.URLNode object at 0x1077ae9d0>, <TextNode: '" class="logo fl"><img sr'>, <django.templatetags.static.StaticNode object at 0x1077ae8d0>, <TextNode: '"></a>\n\t\t<div class="sear'>, <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x1077aecd0>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>, <TextNode: '\n\n\t</div>\n'>]>}, {'block': <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x1077aecd0>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>}]
+2020-04-16 16:42:07,481 [Thread-3:123145418313728] [django.server:154] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 2968
+2020-04-16 16:42:07,525 [Thread-3:123145418313728] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/css/reset.css HTTP/1.1" 200 638
+2020-04-16 16:42:07,534 [Thread-7:123145439334400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/slide.js HTTP/1.1" 200 2344
+2020-04-16 16:42:07,535 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/logo.png HTTP/1.1" 200 9987
+2020-04-16 16:42:07,536 [Thread-4:123145423568896] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/css/main.css HTTP/1.1" 200 22383
+2020-04-16 16:42:07,536 [Thread-6:123145434079232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/jquery-ui.min.js HTTP/1.1" 200 70994
+2020-04-16 16:42:07,537 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+2020-04-16 16:42:07,585 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/icons.png HTTP/1.1" 200 5931
+2020-04-16 16:42:15,657 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /admin/. body: 
+2020-04-16 16:42:15,671 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 302 0
+2020-04-16 16:42:15,675 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /admin/login/?next=/admin/. body: 
+2020-04-16 16:42:15,684 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1077c1b90>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077a7850>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107889210>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107646d90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x1078766d0>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107876b50>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:42:15,719 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1077c1b90>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077a7850>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107889210>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107646d90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x1078766d0>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107876b50>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:42:15,726 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+2020-04-16 16:42:15,800 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2020-04-16 16:42:15,852 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2020-04-16 16:42:15,853 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2020-04-16 16:42:30,452 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /admin/login/?next=/admin/. body: csrfmiddlewaretoken=r7l9yTkiYokDfKWxTUxM2P3bcTJsamBqc0qFzgUvJmdMpTaLR3japqaKRVkJ3OQ8&username=1205150638@qq.com&password=123456&next=/admin/
+2020-04-16 16:42:30,455 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2020-04-16 16:42:30,456 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:42:30,466 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.010) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:42:30,544 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10786b710>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077aee90>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10776d050>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10788c210>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x107657110>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107720990>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:42:30,545 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10786b710>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077aee90>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10776d050>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10788c210>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x107657110>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107720990>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:42:30,550 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1965
+2020-04-16 16:42:30,638 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+2020-04-16 16:44:32,889 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /admin/login/?next=/admin/. body: csrfmiddlewaretoken=qAhadXWLy5Bu8hYg4jsYGYlbeayY4AsQbtmGekwYj3uDiqcu2sem3zsKTc9fX2Hy&username=1205150638@qq.com&password=123456&next=/admin/
+2020-04-16 16:44:32,892 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:44:32,893 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:44:32,971 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5290>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077200d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078cde50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107876d10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x1078a5050>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x1077aec50>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:44:32,972 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5290>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077200d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078cde50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107876d10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x1078a5050>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x1077aec50>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:44:32,976 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1965
+2020-04-16 16:44:33,011 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-16 16:44:33,048 [Thread-4:123145423568896] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:44:33,048 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:44:33,049 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:47:18,094 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2020-04-16 16:47:18,098 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:47:18,099 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2020-04-16 16:47:18,102 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2020-04-16 16:47:27,536 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = 'xiaohu'; args=('xiaohu',)
+2020-04-16 16:47:41,740 [MainThread:4746974656] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) INSERT INTO `df_user` (`password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`, `create_time`, `update_time`, `is_delete`) VALUES ('pbkdf2_sha256$120000$H69Es5XNwJga$bK2uNiGeBiwBwskUWc0snopplmI76vRasIH59jOp3/s=', NULL, 1, 'xiaohu', '', '', '1205150638@qq.com', 1, 1, '2020-04-16 08:47:41.666975', '2020-04-16 08:47:41.740165', '2020-04-16 08:47:41.740181', 0); args=['pbkdf2_sha256$120000$H69Es5XNwJga$bK2uNiGeBiwBwskUWc0snopplmI76vRasIH59jOp3/s=', None, True, 'xiaohu', '', '', '1205150638@qq.com', True, True, '2020-04-16 08:47:41.666975', '2020-04-16 08:47:41.740165', '2020-04-16 08:47:41.740181', False]
+2020-04-16 16:47:50,909 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /admin/login/?next=/admin/. body: csrfmiddlewaretoken=Ro6HP8L4RIM0zIzNZMNkmMXMjJRD9AKvChbdQvlhCGF9JRN1XVzIJn4lYLsU22Zd&username=1205150638@qq.com&password=wuxianhun1&next=/admin/
+2020-04-16 16:47:50,912 [Thread-5:123145428824064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2020-04-16 16:47:50,913 [Thread-5:123145428824064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:47:50,914 [Thread-5:123145428824064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:47:50,993 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5950>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10776bd50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078d5490>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107792a90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x107792590>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107755dd0>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:47:50,995 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5950>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10776bd50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078d5490>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107792a90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x107792590>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107755dd0>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:47:50,999 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1965
+2020-04-16 16:47:51,035 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-16 16:47:51,075 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:47:51,075 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:47:51,075 [Thread-4:123145423568896] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-16 16:49:15,529 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /admin/login/?next=/admin/. body: 
+2020-04-16 16:49:15,536 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5950>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077284d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078942d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107792d50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x10776df50>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107720c10>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:49:15,537 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c5950>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1077284d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078942d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107792d50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x10776df50>, 'site_title': 'Django 站点管理员', 'site_header': 'Django 管理', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': '登录', 'app_path': '/admin/login/?next=/admin/', 'username': '', 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x107720c10>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'zh-hans', 'LANGUAGE_BIDI': False}]
+2020-04-16 16:49:15,543 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+2020-04-16 16:49:19,141 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /index/. body: 
+2020-04-16 16:49:19,146 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cart_count' in template 'df_goods/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cart_count] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1058c2a70>>, 'request': <WSGIRequest: GET '/index/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x107720a50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078cd0d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10776dcd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'types': <QuerySet []>, 'index_banner': <QuerySet []>, 'promotion_banner': <QuerySet []>}, {'block': <Block Node: search_bar. Contents: [<TextNode: '\n\t<div class="search_bar '>, <django.template.defaulttags.URLNode object at 0x1078dc250>, <TextNode: '" class="logo fl"><img sr'>, <django.templatetags.static.StaticNode object at 0x1078dc2d0>, <TextNode: '"></a>\n\t\t<div class="sear'>, <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x1078dcf50>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>, <TextNode: '\n\n\t</div>\n'>]>}, {'block': <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x1078dcf50>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>}]
+2020-04-16 16:49:19,147 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 2968
+2020-04-16 16:49:25,676 [Thread-5:123145428824064] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/register/. body: 
+2020-04-16 16:49:25,680 [Thread-5:123145428824064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/register.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'vsHoiUxiu4nzKPQme9j3E8Uz6f0QfT5NglMUjh7vf2gIUY4Aci5r1J18LhB78lkv'>, 'request': <WSGIRequest: GET '/user/register/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c2ef0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107894f50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1077943d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="register_co'>, <django.templatetags.static.StaticNode object at 0x1078b0350>, <TextNode: '"></a>\n\t\t\t<div class="reg'>, <django.template.defaulttags.URLNode object at 0x1078b0610>, <TextNode: '">登录</a>\n\t\t\t</div>\n\t\t\t<di'>, <django.template.defaulttags.URLNode object at 0x1078b0810>, <TextNode: '">\n                    '>, <django.template.defaulttags.CsrfTokenNode object at 0x1078b0490>, <TextNode: '\n                    <ul>'>, <Variable Node: errmsg>, <TextNode: '\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t'>]>}]
+2020-04-16 16:49:25,681 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/register/ HTTP/1.1" 200 3314
+2020-04-16 16:49:25,713 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 2181
+2020-04-16 16:49:25,715 [Thread-4:123145423568896] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/logo02.png HTTP/1.1" 200 18818
+2020-04-16 16:49:25,750 [Thread-4:123145423568896] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+2020-04-16 16:49:25,751 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/icons02.png HTTP/1.1" 200 2071
+2020-04-16 16:49:25,751 [Thread-5:123145428824064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+2020-04-16 16:49:49,386 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/register/. body: csrfmiddlewaretoken=vsHoiUxiu4nzKPQme9j3E8Uz6f0QfT5NglMUjh7vf2gIUY4Aci5r1J18LhB78lkv&user_name=tigger&pwd=wuxianhun1&cpwd=wuxianhun1&email=1205150638@qq.com&allow=on
+2020-04-16 16:49:49,388 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:49:49,390 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = 'tigger'; args=('tigger',)
+2020-04-16 16:49:49,394 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/register/ HTTP/1.1" 200 3329
+2020-04-16 16:49:59,869 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/. body: 
+2020-04-16 16:49:59,872 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'rjbjZNCmaNsNvkDU7lr6uPa0len1g5dQccgP0aczVLlWFtR85uduRqhz0gYi9xsy'>, 'request': <WSGIRequest: GET '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077a0710>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078dced0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078d5610>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x1078dcb90>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x1078dc190>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x1078cd390>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1078cd210>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:49:59,874 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/ HTTP/1.1" 200 2213
+2020-04-16 16:49:59,912 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/images/login_banner.png HTTP/1.1" 200 156498
+2020-04-16 16:50:08,606 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/. body: csrfmiddlewaretoken=rjbjZNCmaNsNvkDU7lr6uPa0len1g5dQccgP0aczVLlWFtR85uduRqhz0gYi9xsy&username=tigger&pwd=wuxianhun1
+2020-04-16 16:50:08,608 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:50:08,609 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = 'tigger'; args=('tigger',)
+2020-04-16 16:50:08,677 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '2Md49yT6IaCSPySwGArxdz8kfzFJmEMFNFiAaVtjt8v1ZH6KEJdVAafTUBg0f61n'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5b00>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107794090>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078d5710>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x1077946d0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107794f50>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107794b50>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1077947d0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:50:08,678 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '2Md49yT6IaCSPySwGArxdz8kfzFJmEMFNFiAaVtjt8v1ZH6KEJdVAafTUBg0f61n'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5b00>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107794090>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078d5710>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x1077946d0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107794f50>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107794b50>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1077947d0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:50:08,679 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/ HTTP/1.1" 200 2237
+2020-04-16 16:51:08,449 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/. body: csrfmiddlewaretoken=2Md49yT6IaCSPySwGArxdz8kfzFJmEMFNFiAaVtjt8v1ZH6KEJdVAafTUBg0f61n&username=1205150638@qq.com&pwd=123456
+2020-04-16 16:51:08,451 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:51:08,453 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:51:08,528 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'djk8vOCjKlCyt5NOYd7nVONmg70dswGfYcpEwbcwvjvHDe12WmTLipUVV9BulYVX'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5200>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107894ad0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078d5e10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107894e50>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107894290>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107894790>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1078944d0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:51:08,529 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'djk8vOCjKlCyt5NOYd7nVONmg70dswGfYcpEwbcwvjvHDe12WmTLipUVV9BulYVX'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5200>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107894ad0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078d5e10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107894e50>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107894290>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107894790>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1078944d0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:51:08,531 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/ HTTP/1.1" 200 2237
+2020-04-16 16:51:10,784 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/register/. body: 
+2020-04-16 16:51:10,787 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/register.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'v9vQjGocbk39FHs9ewvodbVrCHfc8XKHg2Amk3YpWiWiPQGncFhMAM20hJQt1pZp'>, 'request': <WSGIRequest: GET '/user/register/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077a0710>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078d8450>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b0bd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="register_co'>, <django.templatetags.static.StaticNode object at 0x1077926d0>, <TextNode: '"></a>\n\t\t\t<div class="reg'>, <django.template.defaulttags.URLNode object at 0x107792810>, <TextNode: '">登录</a>\n\t\t\t</div>\n\t\t\t<di'>, <django.template.defaulttags.URLNode object at 0x107792ad0>, <TextNode: '">\n                    '>, <django.template.defaulttags.CsrfTokenNode object at 0x107792410>, <TextNode: '\n                    <ul>'>, <Variable Node: errmsg>, <TextNode: '\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t'>]>}]
+2020-04-16 16:51:10,788 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/register/ HTTP/1.1" 200 3314
+2020-04-16 16:51:43,668 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/register/. body: csrfmiddlewaretoken=v9vQjGocbk39FHs9ewvodbVrCHfc8XKHg2Amk3YpWiWiPQGncFhMAM20hJQt1pZp&user_name=xiaohuge&pwd=wuxianhun1&cpwd=wuxianhun1&email=1205150638@qq.com&allow=on
+2020-04-16 16:51:43,673 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:51:43,674 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = 'xiaohuge'; args=('xiaohuge',)
+2020-04-16 16:51:43,752 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) INSERT INTO `df_user` (`password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`, `create_time`, `update_time`, `is_delete`) VALUES ('pbkdf2_sha256$120000$KXUKcCpQhsrY$aYqlXXjxpfrPDd0RpvwSCTDTubAbuFSX9WbwjIB3500=', NULL, 0, 'xiaohuge', '', '', '1205150638@qq.com', 0, 1, '2020-04-16 08:51:43.675214', '2020-04-16 08:51:43.752010', '2020-04-16 08:51:43.752029', 0); args=['pbkdf2_sha256$120000$KXUKcCpQhsrY$aYqlXXjxpfrPDd0RpvwSCTDTubAbuFSX9WbwjIB3500=', None, False, 'xiaohuge', '', '', '1205150638@qq.com', False, True, '2020-04-16 08:51:43.675214', '2020-04-16 08:51:43.752010', '2020-04-16 08:51:43.752029', False]
+2020-04-16 16:51:43,768 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) UPDATE `df_user` SET `password` = 'pbkdf2_sha256$120000$KXUKcCpQhsrY$aYqlXXjxpfrPDd0RpvwSCTDTubAbuFSX9WbwjIB3500=', `last_login` = NULL, `is_superuser` = 0, `username` = 'xiaohuge', `first_name` = '', `last_name` = '', `email` = '1205150638@qq.com', `is_staff` = 0, `is_active` = 0, `date_joined` = '2020-04-16 08:51:43.675214', `create_time` = '2020-04-16 08:51:43.752010', `update_time` = '2020-04-16 08:51:43.766293', `is_delete` = 0 WHERE `df_user`.`id` = 7; args=('pbkdf2_sha256$120000$KXUKcCpQhsrY$aYqlXXjxpfrPDd0RpvwSCTDTubAbuFSX9WbwjIB3500=', False, 'xiaohuge', '', '', '1205150638@qq.com', False, False, '2020-04-16 08:51:43.675214', '2020-04-16 08:51:43.752010', '2020-04-16 08:51:43.766293', False, 7)
+2020-04-16 16:51:43,770 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/register/ HTTP/1.1" 302 0
+2020-04-16 16:51:43,773 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /index/. body: 
+2020-04-16 16:51:43,779 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cart_count' in template 'df_goods/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cart_count] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1077a0710>>, 'request': <WSGIRequest: GET '/index/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1078ac6d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a55410>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107794f10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'types': <QuerySet []>, 'index_banner': <QuerySet []>, 'promotion_banner': <QuerySet []>}, {'block': <Block Node: search_bar. Contents: [<TextNode: '\n\t<div class="search_bar '>, <django.template.defaulttags.URLNode object at 0x107a61450>, <TextNode: '" class="logo fl"><img sr'>, <django.templatetags.static.StaticNode object at 0x107a61350>, <TextNode: '"></a>\n\t\t<div class="sear'>, <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x107a61750>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>, <TextNode: '\n\n\t</div>\n'>]>}, {'block': <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x107a61750>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>}]
+2020-04-16 16:51:43,781 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 2968
+2020-04-16 16:51:56,451 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/. body: 
+2020-04-16 16:51:56,454 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'OCN27pb1xq85y6mi6Ia5G8DTpMYJWbAazvSy8MLeio1eIfAw4RWt3JKs4Oz0PDPS'>, 'request': <WSGIRequest: GET '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c2d40>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a52790>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078a5090>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x1078b0250>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x1078b0810>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x1078b0a90>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x1078b0cd0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:51:56,455 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/ HTTP/1.1" 200 2213
+2020-04-16 16:52:05,105 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/order/1. body: 
+2020-04-16 16:52:05,106 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/order/1 HTTP/1.1" 302 0
+2020-04-16 16:52:05,110 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login?next=/user/order/1 HTTP/1.1" 301 0
+2020-04-16 16:52:05,113 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/?next=/user/order/1. body: 
+2020-04-16 16:52:05,116 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '10G3ErSN9nZviarzutEvAzgO1nX5qww9MTLzFOs0UlSEsjFNsCqTXannGpymjYLR'>, 'request': <WSGIRequest: GET '/user/login/?next=/user/order/1'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077654d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a55cd0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b0a90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a55990>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a559d0>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a555d0>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a55dd0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:05,118 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/?next=/user/order/1 HTTP/1.1" 200 2213
+2020-04-16 16:52:16,323 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/?next=/user/order/1. body: csrfmiddlewaretoken=10G3ErSN9nZviarzutEvAzgO1nX5qww9MTLzFOs0UlSEsjFNsCqTXannGpymjYLR&username=1205150638@qq.com&pwd=wuxianhunq&remember=on
+2020-04-16 16:52:16,326 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:52:16,327 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:52:16,404 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'm7lCpNPipcwHDx6f4wGCVHD96ZamvILc70q8qapvaapQNGkt2Fs0iiKIL1LDoa0U'>, 'request': <WSGIRequest: POST '/user/login/?next=/user/order/1'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1078e0d40>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a58b10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a55f10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a58090>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a58610>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a58d10>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a58d50>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:16,405 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'm7lCpNPipcwHDx6f4wGCVHD96ZamvILc70q8qapvaapQNGkt2Fs0iiKIL1LDoa0U'>, 'request': <WSGIRequest: POST '/user/login/?next=/user/order/1'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1078e0d40>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a58b10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a55f10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a58090>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a58610>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a58d10>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a58d50>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:16,406 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/?next=/user/order/1 HTTP/1.1" 200 2237
+2020-04-16 16:52:23,238 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/?next=/user/order/1. body: csrfmiddlewaretoken=m7lCpNPipcwHDx6f4wGCVHD96ZamvILc70q8qapvaapQNGkt2Fs0iiKIL1LDoa0U&username=1205150638@qq.com&pwd=wuxianhun1
+2020-04-16 16:52:23,241 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:52:23,243 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:52:23,318 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '66SaBgumvq5wc5fZ8GiKLFtsfHWvyiSYRZXGCD4zgoYFmetd6P488gA1UJxMrK7G'>, 'request': <WSGIRequest: POST '/user/login/?next=/user/order/1'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5290>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078a50d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a61e10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107792ed0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107792550>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107792490>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107792710>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:23,319 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '66SaBgumvq5wc5fZ8GiKLFtsfHWvyiSYRZXGCD4zgoYFmetd6P488gA1UJxMrK7G'>, 'request': <WSGIRequest: POST '/user/login/?next=/user/order/1'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c5290>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078a50d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a61e10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107792ed0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107792550>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107792490>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107792710>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:23,320 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/?next=/user/order/1 HTTP/1.1" 200 2237
+2020-04-16 16:52:25,738 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/register/. body: 
+2020-04-16 16:52:25,741 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/register.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '5LgK1aqv5ytEsgWxhK6oseQlP9aN0a34QElg2x0IQwmNCpaLfTSMPPXUubL4TCiM'>, 'request': <WSGIRequest: GET '/user/register/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1058c2d40>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a52850>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a52a90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="register_co'>, <django.templatetags.static.StaticNode object at 0x107a619d0>, <TextNode: '"></a>\n\t\t\t<div class="reg'>, <django.template.defaulttags.URLNode object at 0x107a61b50>, <TextNode: '">登录</a>\n\t\t\t</div>\n\t\t\t<di'>, <django.template.defaulttags.URLNode object at 0x107a61ad0>, <TextNode: '">\n                    '>, <django.template.defaulttags.CsrfTokenNode object at 0x107a61350>, <TextNode: '\n                    <ul>'>, <Variable Node: errmsg>, <TextNode: '\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t'>]>}]
+2020-04-16 16:52:25,742 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/register/ HTTP/1.1" 200 3314
+2020-04-16 16:52:27,249 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/. body: 
+2020-04-16 16:52:27,252 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'oRebleQAs36UyIpCSAN959lhvVJswglF9KjHmBqNd1Z3IRDQQJzxsKsQaXkJpIAn'>, 'request': <WSGIRequest: GET '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077a0710>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1078a5c10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b06d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a5f8d0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a5fb50>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a5f590>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a5f4d0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:27,254 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/ HTTP/1.1" 200 2213
+2020-04-16 16:52:34,251 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/. body: csrfmiddlewaretoken=oRebleQAs36UyIpCSAN959lhvVJswglF9KjHmBqNd1Z3IRDQQJzxsKsQaXkJpIAn&username=1205150638@qq.com&pwd=wuxianhun1&remember=on
+2020-04-16 16:52:34,254 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:52:34,254 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = '1205150638@qq.com'; args=('1205150638@qq.com',)
+2020-04-16 16:52:34,325 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'FjDxqnGGEgkjNinWB9QegWtXkgwjrjwdqcI3rKgTpedsXrBaziCCDxAwZi7AkLLV'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x107765320>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a58710>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b0850>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a5f850>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a5f8d0>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a5f4d0>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a5f450>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:34,326 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'FjDxqnGGEgkjNinWB9QegWtXkgwjrjwdqcI3rKgTpedsXrBaziCCDxAwZi7AkLLV'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x107765320>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a58710>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b0850>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a5f850>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a5f8d0>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a5f4d0>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a5f450>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:52:34,327 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/ HTTP/1.1" 200 2237
+2020-04-16 16:54:16,930 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: POST. get_full_path: /user/login/. body: csrfmiddlewaretoken=FjDxqnGGEgkjNinWB9QegWtXkgwjrjwdqcI3rKgTpedsXrBaziCCDxAwZi7AkLLV&username=xiaohuge&pwd=wuxianhun1
+2020-04-16 16:54:16,932 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2020-04-16 16:54:16,933 [Thread-8:123145444589568] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `df_user`.`id`, `df_user`.`password`, `df_user`.`last_login`, `df_user`.`is_superuser`, `df_user`.`username`, `df_user`.`first_name`, `df_user`.`last_name`, `df_user`.`email`, `df_user`.`is_staff`, `df_user`.`is_active`, `df_user`.`date_joined`, `df_user`.`create_time`, `df_user`.`update_time`, `df_user`.`is_delete` FROM `df_user` WHERE `df_user`.`username` = 'xiaohuge'; args=('xiaohuge',)
+2020-04-16 16:54:17,008 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VWSujghQfY5YObulza76QNnEUhnVc9DVGPX0kDR30WY7YkIzxjTudoudzjYc5BSD'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077654d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a5ff90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a5a910>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a60710>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a60f50>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a604d0>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a60290>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:54:17,009 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'checked' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'checked'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [checked] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VWSujghQfY5YObulza76QNnEUhnVc9DVGPX0kDR30WY7YkIzxjTudoudzjYc5BSD'>, 'request': <WSGIRequest: POST '/user/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1077654d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a5ff90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a5a910>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'errmsg': '用户名或密码错误'}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a60710>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a60f50>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a604d0>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a60290>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:54:17,010 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "POST /user/login/ HTTP/1.1" 200 2237
+2020-04-16 16:54:31,509 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /index/. body: 
+2020-04-16 16:54:31,513 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cart_count' in template 'df_goods/index.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cart_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cart_count] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1078e7320>>, 'request': <WSGIRequest: GET '/index/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x1078b0450>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a5f550>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107a5ab10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'types': <QuerySet []>, 'index_banner': <QuerySet []>, 'promotion_banner': <QuerySet []>}, {'block': <Block Node: search_bar. Contents: [<TextNode: '\n\t<div class="search_bar '>, <django.template.defaulttags.URLNode object at 0x107a5c910>, <TextNode: '" class="logo fl"><img sr'>, <django.templatetags.static.StaticNode object at 0x107a5c890>, <TextNode: '"></a>\n\t\t<div class="sear'>, <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x107a65150>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>, <TextNode: '\n\n\t</div>\n'>]>}, {'block': <Block Node: cart_bar. Contents: [<TextNode: '\n\t\t<div class="guest_cart'>, <django.template.defaulttags.URLNode object at 0x107a65150>, <TextNode: '" class="cart_name fl">我的'>, <IfNode>, <TextNode: '\n\t\t</div>\n    '>]>}]
+2020-04-16 16:54:31,515 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 2968
+2020-04-16 16:54:35,283 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/. body: 
+2020-04-16 16:54:35,284 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/ HTTP/1.1" 302 0
+2020-04-16 16:54:35,288 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login?next=/user/ HTTP/1.1" 301 0
+2020-04-16 16:54:35,291 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/?next=/user/. body: 
+2020-04-16 16:54:35,294 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '8FHS877Y9JjKMxlsaoYsbSujGAXYQCiwTyMo9uHbUHcTWGzG8xKQytBSlCyfJ4xe'>, 'request': <WSGIRequest: GET '/user/login/?next=/user/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1078e7290>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107794610>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078a5c10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x1077941d0>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x1077943d0>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107890f10>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107890dd0>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:54:35,295 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/?next=/user/ HTTP/1.1" 200 2213
+2020-04-16 16:55:00,091 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /cart/. body: 
+2020-04-16 16:55:00,092 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /cart/ HTTP/1.1" 302 0
+2020-04-16 16:55:00,096 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login?next=/cart/ HTTP/1.1" 301 0
+2020-04-16 16:55:00,099 [Thread-8:123145444589568] [django.server:17] [md1:process_request] [INFO]- method: GET. get_full_path: /user/login/?next=/cart/. body: 
+2020-04-16 16:55:00,102 [Thread-8:123145444589568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errmsg' in template 'df_user/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errmsg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errmsg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'gGxyFlNtuxPo75hTNXwocf5VTKM7qOj91zC4GInGfvIxhev7L6iMzQcuyMnojgyR'>, 'request': <WSGIRequest: GET '/user/login/?next=/cart/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1078e70e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107a55210>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1078b0c50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'username': '', 'checked': ''}, {'block': <Block Node: body. Contents: [<TextNode: '\n\t<div class="login_top c'>, <django.template.defaulttags.URLNode object at 0x107a55290>, <TextNode: '" class="login_logo"><img'>, <django.templatetags.static.StaticNode object at 0x107a55fd0>, <TextNode: '"></a>\n\t</div>\n\n\t<div cla'>, <django.template.defaulttags.URLNode object at 0x107a55310>, <TextNode: '">立即注册</a>\n\t\t\t\t</div>\n\t\t\t'>, <TextNode: '\n\t\t\t\t\t<form method="post"'>, <django.template.defaulttags.CsrfTokenNode object at 0x107a50b10>, <TextNode: '\n\t\t\t\t\t\t<input type="text"'>, <Variable Node: username>, <TextNode: '" placeholder="请输入用户名">\n\t'>, <Variable Node: checked>, <TextNode: '>\n\t\t\t\t\t\t\t<label>记住用户名</la'>, <Variable Node: errmsg>, <TextNode: '\n'>]>}]
+2020-04-16 16:55:00,104 [Thread-8:123145444589568] [django.server:154] [basehttp:log_message] [INFO]- "GET /user/login/?next=/cart/ HTTP/1.1" 200 2213

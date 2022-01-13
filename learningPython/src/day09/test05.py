@@ -27,4 +27,4 @@ pizza = {
 print("you order:" + pizza['crust'])
 print("needing topping:")
 for item in pizza['toppings']:
-	print(item, end="\t")
+	print(item, end=",")

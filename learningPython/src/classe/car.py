@@ -1,3 +1,4 @@
+# coding=utf-8
 class Car():
     def __init__(self, manufacturer, model, year):
         self.manufacturer = manufacturer
@@ -19,8 +20,8 @@ class Car():
         self.odometer += miles
 
 
-# car = Car("长春", '手动', 12)
-# car.read_odometer()
-# car.update_odometer(12)
-# car.read_odometer()
+car = Car("长春", '手动', 12)
+car.read_odometer()
+car.update_odometer(12)
+car.read_odometer()
 

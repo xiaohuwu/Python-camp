@@ -1,3 +1,4 @@
+# coding=utf-8
 from car import Car
 
 class Battery():
@@ -10,10 +11,10 @@ class Battery():
 
 class ElectricCar(Car):
     def __init__(self, manufacturer, model, year):
-        super().__init__(manufacturer, model, year)
+        super(manufacturer, model, year)
         self.battery = Battery()
 
 
-# car = ElectricCar("长春", "手动", 12)
+car = ElectricCar("长春", "手动", 12)
 # print(car.get_descriptive_name())
 
